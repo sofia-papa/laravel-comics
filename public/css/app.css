@@ -1,6 +1,39 @@
+header .jumbo {
+  width: 50%;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+header ul li {
+  padding: 15px;
+}
+
+header ul li a {
+  text-decoration: none;
+}
+
+header ul li:hover {
+  background-color: aquamarine;
+}
+
+header ul li.active {
+  background-color: azure;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#products .films {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
 }
 

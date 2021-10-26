@@ -1,0 +1,24 @@
+header{
+    figure{
+        
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        li{
+            padding: 15px;
+            
+            a{
+                text-decoration: none;
+            }
+            &:hover{
+                background-color: aquamarine;
+            }
+            &.active{
+                background-color: azure;
+            }
+        }
+    }
+}

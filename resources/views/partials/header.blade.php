@@ -9,4 +9,10 @@
                   href="{{route($link['route'])}}">{{$link['text']}}</a></li>
         @endforeach
     </ul>
+
+    <div class="jumbo">
+        {{-- <img src="{{ asset('images/jumbotron.jpg')}}" alt=""> --}}
+    </div>
+
+
 </header>
