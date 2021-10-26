@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    @include('partials.header')
+    @include('partials.header', ['header_links' => config ('header_main_menu')])
 
     <main>
         @yield('contenuto')
     </main>
 
     @include('partials.footer')
+
+    @yield('script-adder')
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
