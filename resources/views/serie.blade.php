@@ -1,12 +1,15 @@
 @extends('layouts.main');
 
-@section('title', 'Action Comics')
+@section('title', $series['title'])
 
 @section('contenuto')
+     <div class="img-serie">
+        {{--  {{$series['thumb']}} --}}
+     </div>
      <div id="single-serie" class="container">
         <div class="left-zone">
            <h2>{{$series['title']}}</h2>
-           <div>
+           <div class="available">
               <p>U.S. Price: {{$series['price']}}</p>
               <p>Check Availability</p>
           </div>
@@ -20,19 +23,27 @@
      <div class="second-wrapper">
         <div class="talent">
           <h3>Talent</h3>
+          <div>
                <h5>Art by:</h5>
-               <p></p>
+               @foreach ($series['artists'] as $artist)
+                   <li class="artist-writers">{{$artist}}</li>
+               @endforeach
+
                <h5>Written by:</h5>
-               <p> </p>
-        </div>
-        <div class="Specs">
-          <h3>Specs</h3>
-               <h5>Series: {{$series['series']}}</h5>
-               <h5>U.S. Price: {{$series['price']}}</h5>
-               <h5>On Sale Date: {{$series['sale_date']}}</h5>
+               @foreach ($series['writers'] as $writer)
+                   <li class="artist-writers">{{$writer}}</li>
+               @endforeach
         </div>
      </div>
-     @dump($series)
+        <div class="Specs">
+          <h3>Specs</h3>
+          <div>
+               <h5>Series: </h5> {{$series['series']}}
+               <h5>U.S. Price: </h5> {{$series['price']}}
+               <h5>On Sale Date: </h5>  {{$series['sale_date']}}
+          </div>
+        </div>
+     </div>
 @endsection
 
 @section('cdn-import')
