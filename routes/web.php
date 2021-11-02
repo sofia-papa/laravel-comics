@@ -50,6 +50,13 @@ Route::get('/shop', function () {
 Route::get('/serie', function () {
     return view('serie'); }) -> name('serie');
 
-Route::get('/serie', function () {
+Route::get('/serie/{id}', function ($id) {
     $series = config('serie_menu');
-    return view('serie', ['series' => $series[1]]); }) -> name ('serie');
+
+    if(is_numeric($id) && ($id < count($series) && $id >= 0)){
+        $serie = $series[$id];
+        return view('serie', ['series' => $serie]);
+    } else {
+        abort('404');
+    }
+}) -> name ('serie');
