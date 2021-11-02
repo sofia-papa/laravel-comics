@@ -1,0 +1,37 @@
+footer{
+    .container{
+        background-color: rgb(48, 46, 46);
+    }
+
+    .colums{
+        width: 100%;
+        display: flex;
+     }
+    
+        .footer-nav-wrapper{
+          padding: 0.5rem 2.5rem;
+     }
+    
+
+    ul{
+        list-style: none;
+
+        li a{
+            text-decoration: none;
+            color: #8b8a88 ;
+            font-size: small;
+            
+        }
+    }
+
+    .dc_logo{
+        width: 30%;
+        margin-left: 100px;
+    }
+
+    h3{
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+}

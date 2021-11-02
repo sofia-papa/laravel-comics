@@ -1,17 +1,28 @@
 #products{
+    background-color: #1c1c1c;
+    color: white;
+    font-size: small;
     .main-container{
         
-        
+    }
+
+    .jumbotron{
+        width: 100% ;
+        height: 60% ;
+        object-fit: cover;
+        object-position:top;
     }
 
     .films{
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        width: 65%;
+        width: 100%;
+        padding: 1rem 3rem;
     }
 
     .serie-box{
-    
+        padding: 1rem 0;
+        margin-left: 1px;
     }
 }
