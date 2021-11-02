@@ -1,6 +1,6 @@
 <header>
     <figure>
-        <img src="{{ asset('images/dc-logo.png')}}" alt="">
+        <img class="jumbo-bg" src="{{ asset('images/dc-logo.png')}}" alt="">
     </figure>
 
     <ul>
