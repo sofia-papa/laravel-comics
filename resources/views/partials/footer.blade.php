@@ -43,12 +43,12 @@
         <img class="dc_logo" src="{{ asset('images/dc-logo-bg.png')}}" alt="">
     </div> 
 
-    <div>
-        <div>
-            <h4>SIGN-UP</h4>
+    <div class="sign-up-follow">
+        <div class="sign-up-button">
+            <h4>SIGN-UP NOW!</h4>
         </div>
 
-        <div>
+        <div class="follow-us">
             <h4>FOLLOW US</h4>
             
         </div>
