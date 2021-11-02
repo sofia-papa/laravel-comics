@@ -49,3 +49,7 @@ Route::get('/shop', function () {
 
 Route::get('/serie', function () {
     return view('serie'); }) -> name('serie');
+
+Route::get('/serie', function () {
+    $series = config('serie_menu');
+    return view('serie', ['series' => $series[1]]); }) -> name ('serie');
