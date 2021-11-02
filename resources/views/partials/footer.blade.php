@@ -1,7 +1,7 @@
 <footer>
     <div class="colums container">
         <div class="footer-nav-wrapper">
-            <h4>DC COMICS</h4>
+            <h3>DC COMICS</h3>
                <nav>
                    <ul>
                        @foreach ($dc_comics as $dc_comic)
@@ -13,9 +13,8 @@
                    </ul>
                 </nav>
         </div>
-
         <div class="footer-nav-wrapper">
-            <h4>DC</h4>
+            <h3>DC</h3>
                 <nav>
                     <ul>
                         @foreach ($dc_only as $dc_ol)
@@ -29,7 +28,7 @@
         </div>
 
         <div class="footer-nav-wrapper">
-            <h4>SITES</h4>
+            <h3>SITES</h3>
                 <nav>
                     <ul>
                         @foreach ($sites_comics as $sites)
@@ -41,9 +40,17 @@
                     </ul>
                 </nav>
         </div>
+        <img class="dc_logo" src="{{ asset('images/dc-logo-bg.png')}}" alt="">
+    </div> 
+
+    <div>
+        <div>
+            <h4>SIGN-UP</h4>
+        </div>
+
+        <div>
+            <h4>FOLLOW US</h4>
+            
+        </div>
     </div>
-
-
-    @dump($sites_comics);
-     
 </footer>

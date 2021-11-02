@@ -5,8 +5,7 @@
 @section('contenuto')
        <div id="products">
            <div class="main-container"> 
-
-              <img src="{{ asset('images/jumbotron.jpg')}}" alt="">
+             <img class="jumbotron" src="{{ asset('images/jumbotron.jpg')}}" alt="">
                <div class="films">
                   @foreach ($films as $film) 
                    <div class="card serie-box">
